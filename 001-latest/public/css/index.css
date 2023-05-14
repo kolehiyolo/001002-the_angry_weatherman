@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: Visitor;
+  src: url("../fonts/visitor/visitor1.ttf");
+}
+html body, html body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html body, html body * {
+  font-family: Visitor, sans-serif;
+  color: white;
+}
+
+@media (min-width: 0px) {
+  html body .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #157c99;
+    align-items: center;
+    padding: 20px 50px;
+  }
+  html body .header .logo p {
+    font-size: 24px;
+  }
+  html body .header .nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+  }
+  html body .header .nav ul li {
+    list-style-type: none;
+  }
+  html body .header .nav ul li a {
+    font-size: 20px;
+  }
+}
+@media (min-width: 0px) {
+  html body .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #157c99;
+    padding: 20px;
+  }
+}
+@media (min-width: 0px) {
+  html body .main-home .ui h1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    font-size: 50px;
+  }
+  html body .main-home .ui .services {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (min-width: 0px) {
+  html body .main-weather .ui .prompt h2 {
+    font-size: 40px;
+  }
+  html body .main-weather .ui form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (min-width: 0px) {
+  html body {
+    background-color: #19A7CE;
+    background-color: #6a9bb8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  html body .main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 0px) and (min-width: 0px) {
+  html body .main .speech-container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+  }
+  html body .main .speech-container .speech {
+    display: inline-block;
+    overflow: auto;
+    float: left;
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    position: absolute;
+    bottom: 170px;
+    right: -300px;
+    z-index: 1;
+  }
+  html body .main .speech-container .speech span {
+    float: left;
+    color: black !important;
+  }
+  html body .main .speech-container .speech span.size-5 {
+    display: inline-block;
+    font-size: 50px;
+    line-height: 35px;
+  }
+  html body .main .speech-container .speech span.size-4 {
+    display: inline-block;
+    font-size: 40px;
+    line-height: 30px;
+  }
+  html body .main .speech-container .speech span.size-3 {
+    display: inline-block;
+    font-size: 30px;
+    line-height: 25px;
+  }
+  html body .main .speech-container .speech span.size-2 {
+    display: inline-block;
+    font-size: 25px;
+    line-height: 25px;
+  }
+  html body .main .speech-container .speech span.size-1 {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  html body .main .speech-container .speech span.size-0 {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media (min-width: 0px) {
+  html body .main .character {
+    position: relative;
+  }
+  html body .main .character img {
+    width: 500px;
+  }
+}
+@media (min-width: 0px) {
+  html body .main .ui {
+    max-width: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  html body .main .ui .prompt {
+    font-size: 50px;
+  }
+  html body .main .ui .input-custom {
+    width: 100%;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 40px;
+  }
+  html body .main .ui .button-custom {
+    width: 100%;
+    background-color: #114553;
+    border: none;
+    border-radius: 0;
+    font-size: 25px;
+    padding: 10px 20px;
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,48 @@
+.main-weather {
+
+    &,
+    * {}
+
+    // * All Sizes
+    @media (min-width: 0px) {
+        .speech-container {
+            .speech {
+                // width: 500px;
+            }
+        }
+        .character {
+        }
+
+        .ui {
+            .prompt {
+                h2 {
+                    font-size: 40px;
+                }
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                input {
+                    
+                }
+
+                button {
+
+                }
+            }
+
+        }
+    }
+
+    // * Mobile Sizes
+    @media (min-width: 0px) and (max-width: 640px) {}
+
+    // * Mid-tablet Size
+    @media (min-width: 641px) and (max-width: 1000px) {}
+
+    // * Empty
+    @media (min-width: 10000000px) {}
+}

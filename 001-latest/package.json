@@ -1,0 +1,26 @@
+{
+  "name": "001002-the_angry_weatherman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kolehiyolo/001002-the_angry_weatherman.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kolehiyolo/001002-the_angry_weatherman/issues"
+  },
+  "homepage": "https://github.com/kolehiyolo/001002-the_angry_weatherman#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "lodash": "^4.17.21",
+    "mongoose": "^7.1.1"
+  }
+}

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: Visitor;
+    src: url("../fonts/visitor/visitor1.ttf");
+}
+
+// * Reset Boxing
+html {
+    body {
+        &,
+        & * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    }
+}
+
+// * Test
+html {
+    body {
+        &,
+        * { 
+            // border: dashed 1px red;
+        }
+    }
+}
+
+// * Fonts
+html {
+    body {
+        &,
+        & * {
+            font-family: Visitor, sans-serif;
+            color: white;
+        }
+    }
+}
+
+// @import "pages/login/login";
+// @import "pages/register/register";
+
+html body {
+    @import "partials/header";
+    @import "partials/footer";
+    @import "pages/home/home";
+    @import "pages/weather/weather";
+    // @import "pages/add/add";
+
+    // * All Sizes
+    @media (min-width: 0px) {
+        background-color: #19A7CE;
+        background-color: #6a9bb8;
+
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+
+        .main {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            // gap: 20px;
+
+            @import "partials/speech";
+
+            .character {
+                position: relative;
+
+                img {
+                    width: 500px;
+                }
+            }
+
+            .ui {
+                // padding: 50px 0px 0px;
+                max-width: 500px;
+                width: 500px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .prompt {
+                    // display: flex;
+                    // flex-direction: column;
+                    // gap: 0px;
+                    // align-items: center;
+                    font-size: 50px;
+                }
+
+                .input-custom {
+                    width: 100%;
+                    color: black;
+                    border: none;
+                    padding: 10px 20px;
+                    font-size: 40px;
+                }
+
+                .button-custom {
+                    width: 100%;
+                    background-color: #114553;
+                    border: none;
+                    border-radius: 0;
+                    font-size: 25px;
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+
+    // * Mobile Sizes
+    @media (min-width: 0px) and (max-width: 640px) {
+
+    }
+
+    // * Mid-tablet Size
+    @media (min-width: 641px) and (max-width: 1000px) {
+
+    }
+
+    // * Empty
+    @media (min-width: 10000000px) {
+
+    }
+}
