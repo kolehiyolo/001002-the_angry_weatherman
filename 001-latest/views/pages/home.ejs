@@ -7,37 +7,19 @@
     <%- include("../partials/header"); -%>
 
     <main class="main-home main">
-        <div class="speech-container">
-            <div class="speech">
-                <!-- <span class="speech-0">I'm Harold, </span>
-                <span class="speech-0">the Angry Weatherman.</span>
-                <span class="speech-0">The fuck you want from me?</span> -->
+        <form action="/weather" action="POST">
+            <div class="location-input">
+                <label for="location">
+                    <p>Enter a location</p>
+                </label>
+                <input id="location" type="text" name="location" placeholder="" value="" required>
             </div>
-        </div>
-        <div class="character">
-            <img src="images/character-and-background.gif" alt="">
-        </div>
-        <div class="ui">
-            <!-- <h1><span>The Angry</span><span>Weatherman</span></h1> -->
-            <div class="services">
-                <a href="/weather">
-                    <button class="button-custom"type="button">
-                        Ask about the weather
-                    </button>
-                </a>
-                <a href="/holidays">
-                    <button class="button-custom"type="button">
-                        Ask about upcoming holidays
-                    </button>
-                </a>
-                <a href="/animals">
-                    <button class="button-custom"type="button">
-                        Ask about...animals??
-                    </button>
-                </a>
-            </div>
-        </div>
+            <button class="button" type="submit">Submit</button>
+        </form>
     </main>
+
+    <div class="decoratives">
+    </div>
 
     <%- include("../partials/footer"); -%>
 

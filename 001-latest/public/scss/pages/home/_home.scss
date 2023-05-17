@@ -1,0 +1,52 @@
+.main-home {
+    &,
+    * {
+        // border: dashed 1px red;
+    }
+
+    // * All Sizes
+    @media (min-width: 0px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        z-index: 2;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            align-items: center;
+
+            * {
+                font-size: 40px;
+            }
+
+            .location-input {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                align-items: center;
+
+                label {}
+
+                input {
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                    color: black;
+                }
+            }
+
+            button {}
+        }
+    }
+
+    // * Mobile Sizes
+    @media (min-width: 0px) and (max-width: 640px) {}
+
+    // * Mid-tablet Size
+    @media (min-width: 641px) and (max-width: 1000px) {}
+
+    // * Empty
+    @media (min-width: 10000000px) {}
+}

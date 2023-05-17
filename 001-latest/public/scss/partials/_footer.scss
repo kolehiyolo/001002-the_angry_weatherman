@@ -1,0 +1,32 @@
+.footer {
+
+    &,
+    * {
+        // border: dashed 1px red;
+    }
+
+    // * All Sizes
+    @media (min-width: 0px) {
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        // padding: 50px;
+
+        p.copyright {
+            text-transform: lowercase;
+        }
+    }
+
+    // * Mobile Sizes
+    @media (min-width: 0px) and (max-width: 640px) {}
+
+    // * Mid-tablet Size
+    @media (min-width: 641px) and (max-width: 1000px) {}
+
+    // * Empty
+    @media (min-width: 10000000px) {}
+}
