@@ -72,7 +72,7 @@ function decideProperties() {
         rotation: Math.floor(Math.random() * 360),
         // direction: Math.floor(Math.random() * 360),
         speed: 50 + Math.random() * 50,
-        opacity: Math.random() * 0.7,
+        opacity: 0.2 + Math.random() * 0.6,
     }
 
     return cloudProps;
