@@ -33,8 +33,16 @@ app.get("/", function (req, res) {
     res.render("pages/home");
 });
 
-app.get("/weather", function (req, res) {
-    res.render("pages/weather");
+app.get("/weather/hot", function (req, res) {
+    res.render("pages/weather", {
+        result: "hot",
+    });
+});
+
+app.get("/weather/raining", function (req, res) {
+    res.render("pages/weather", {
+        result: "raining",
+    });
 });
 
 // app.get("/weather/:city", function (req, res) {

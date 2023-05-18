@@ -7,51 +7,21 @@
     <%- include("../partials/header"); -%>
 
     <main class="main-weather main">
-        <% if (showingResults){ %>
-            <div class="speech-container">
-                <div class="speech">
-                    <!-- <span>Here you go, you uneducated swine unwilling to go outside to check shit for yourself</span>
-                    <span>Don't you have windows? Or a default weather app on your phone?</span>
-                    <span>For fucks sake, you can even just Google the fucking weather</span>
-                    <span>Pathetic</span> -->
-                    <!-- <span class="bold-4">What abonimable shithole of a place are you from?</span> -->
-                </div>
-            </div>
-            <div class="character">
-                <img src="../images/character-and-background.gif" alt="">
-            </div>
-            <div class="ui">
-                <!-- <div class="prompt">
-                    <h2>Insert your location</h2>
-                </div>
-                <form action="/weather" method="post">
-                    <input class="input-custom" type="text" name="city">
-                       <button class="button-custom" type="submit">Submit</button>
-                </form> -->
-                <p><%= weatherResults %></p>
-            </div>
-        <% } else { %>
-            <div class="speech-container">
-                <div class="speech">
-                    <!-- <span>Well la di da. Fucking Einstein over here.</span>
-                    <span>So smart of you to ask the weatherman about the weather.</span>
-                    <span class="bold-4">What abonimable shithole of a place are you from so we can get this over with?</span> -->
-                </div>
-            </div>
-            <div class="character">
-                <img src="images/character-and-background.gif" alt="">
-            </div>
-            <div class="ui">
-                <div class="prompt">
-                    <h2>Insert your location</h2>
-                </div>
-                <form action="/weather" method="post">
-                    <input class="input-custom" type="text" name="city">
-                    <button class="button-custom" type="submit">Submit</button>
-                </form>
-            </div>
+        <% if (result === "hot"){ %>
+        <p>It's gonna be fucking hot</p>
+        <% } else if (result ==="raining"){ %>
+        <p>It's gonna fucking rain</p>
         <% } %>
+        <a href="/">
+            <button class="button" type="button">Back</button>
+        </a>
     </main>
+
+    <div class="decoratives-cloud decoratives">
+    </div>
+
+    <div class="decoratives-hot decoratives">
+    </div>
 
     <%- include("../partials/footer"); -%>
 

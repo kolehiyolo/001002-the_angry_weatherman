@@ -1,35 +1,35 @@
-console.log(`READ generate-clouds.js`);
+console.log(`READ generate-fire.js`);
 
-function generateClouds(count) {
-    console.log(`RUN generateClouds()`);
+function generateFire(count) {
+    console.log(`RUN generateFire()`);
 
-    const cloudProps = decideProperties();
-    const inlineStyle = `
-        width: ${cloudProps.size}px;
-        height: ${cloudProps.size}px;
-        opacity: ${cloudProps.opacity};
-        transform: rotate(${cloudProps.rotation}deg);
-        animation: cloudDrift-${count} ${cloudProps.speed}s linear 0s infinite alternate;
-    `;
+    // const cloudProps = decideProperties();
+    // const inlineStyle = `
+    //     width: ${cloudProps.size}px;
+    //     height: ${cloudProps.size}px;
+    //     opacity: ${cloudProps.opacity};
+    //     transform: rotate(${cloudProps.rotation}deg);
+    //     animation: cloudDrift-${count} ${cloudProps.speed}s linear 0s infinite alternate;
+    // `;
 
-    const cloud = `<div class="cloud" style="${inlineStyle}"></div>`;
+    // const cloud = `<div class="cloud" style="${inlineStyle}"></div>`;
 
-    var createdStyleTag = document.createElement("style");
-    createdStyleTag.textContent = 
-    `@keyframes cloudDrift-${count}{
-        from {
-            left: ${cloudProps.origin.positionX}px;
-            top: ${cloudProps.origin.positionY}px;
-        }
-        to {
-            left: ${cloudProps.destination.positionX}px;
-            top: ${cloudProps.destination.positionY}px;
-        }
-    };`;
+    // var createdStyleTag = document.createElement("style");
+    // createdStyleTag.textContent = 
+    // `@keyframes cloudDrift-${count}{
+    //     from {
+    //         left: ${cloudProps.origin.positionX}px;
+    //         top: ${cloudProps.origin.positionY}px;
+    //     }
+    //     to {
+    //         left: ${cloudProps.destination.positionX}px;
+    //         top: ${cloudProps.destination.positionY}px;
+    //     }
+    // };`;
 
-    document.body.appendChild(createdStyleTag);
+    // document.body.appendChild(createdStyleTag);
 
-    $(`.decoratives-cloud`).append(cloud);
+    // $(`.decoratives`).append(cloud);
 }
 
 function decideProperties() {
@@ -78,14 +78,14 @@ function decideProperties() {
     return cloudProps;
 }
 
-generateClouds();
+// generateFire();
 
 let cloudLimit = 50;
 let cloudCount = 0;
 
 setInterval(() => {
     if (cloudCount < cloudLimit) {
-        generateClouds(cloudCount);
+        generateFire(cloudCount);
         cloudCount++;
     }
 }, 0);

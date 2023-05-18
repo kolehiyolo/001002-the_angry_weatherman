@@ -15,10 +15,18 @@
         z-index: 1;
         overflow: hidden;
 
-        .cloud {
-            border-radius: 50%;
-            background: linear-gradient(#FFFFFF 4.91%, rgba(255, 255, 255, 0) 92.14%);
-            position: absolute;
+        &-cloud {   
+            .cloud {
+                border-radius: 50%;
+                background: linear-gradient(#FFFFFF 4.91%, rgba(255, 255, 255, 0) 92.14%);
+                position: absolute;
+            }
+        }
+
+        &-hot {
+            .fire {
+                
+            }
         }
     }
 
