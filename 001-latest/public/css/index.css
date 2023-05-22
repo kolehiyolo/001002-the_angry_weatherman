@@ -29,6 +29,10 @@ html body, html body * {
     text-transform: lowercase;
   }
 }
+html body .decoratives,
+html body .decoratives * {
+  border: dashed 1px red;
+}
 @media (min-width: 0px) {
   html body .decoratives {
     position: absolute;
@@ -44,6 +48,14 @@ html body, html body * {
     background: linear-gradient(#FFFFFF 4.91%, rgba(255, 255, 255, 0) 92.14%);
     position: absolute;
   }
+  html body .decoratives-hot .fire {
+    position: absolute;
+  }
+  html body .decoratives-hot .fire .burst {
+    position: absolute;
+    background: linear-gradient(#FFFFFF 4.91%, rgba(255, 255, 255, 0) 92.14%);
+    border-radius: 50%;
+  }
 }
 @media (min-width: 0px) {
   html body .main-home {
@@ -52,6 +64,7 @@ html body, html body * {
     justify-content: center;
     position: relative;
     z-index: 2;
+    background: linear-gradient(340deg, #0092FF -3.46%, rgba(255, 255, 255, 0.582) 128.9%);
   }
   html body .main-home form {
     display: flex;
@@ -75,6 +88,26 @@ html body, html body * {
   }
 }
 @media (min-width: 0px) {
+  html body .main-weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(286.23deg, #FF4D00 -3.2%, rgba(255, 0, 0, 0) 118.06%);
+  }
+  html body .main-weather .result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+  html body .main-weather .result * {
+    font-size: 40px;
+  }
+}
+@media (min-width: 0px) {
   html body {
     display: flex;
     flex-direction: column;
@@ -82,7 +115,7 @@ html body, html body * {
     gap: 25px;
     min-height: 100vh;
     position: relative;
-    background: linear-gradient(340deg, #0092FF -3.46%, rgba(0, 138, 255, 0) 128.9%);
+    background-color: #1E1E1E;
   }
   html body .main {
     flex-grow: 1;

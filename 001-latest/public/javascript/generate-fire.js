@@ -83,9 +83,9 @@ function decideProperties() {
 let cloudLimit = 50;
 let cloudCount = 0;
 
-setInterval(() => {
-    if (cloudCount < cloudLimit) {
-        generateFire(cloudCount);
-        cloudCount++;
-    }
-}, 0);
+// setInterval(() => {
+//     if (cloudCount < cloudLimit) {
+//         generateFire(cloudCount);
+//         cloudCount++;
+//     }
+// }, 0);

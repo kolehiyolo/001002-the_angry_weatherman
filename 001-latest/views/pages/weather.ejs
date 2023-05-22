@@ -7,14 +7,16 @@
     <%- include("../partials/header"); -%>
 
     <main class="main-weather main">
-        <% if (result === "hot"){ %>
-        <p>It's gonna be fucking hot</p>
-        <% } else if (result ==="raining"){ %>
-        <p>It's gonna fucking rain</p>
-        <% } %>
-        <a href="/">
-            <button class="button" type="button">Back</button>
-        </a>
+        <div class="result">
+            <% if (result === "hot"){ %>
+            <p>It's gonna be fucking hot</p>
+            <% } else if (result ==="raining"){ %>
+            <p>It's gonna fucking rain</p>
+            <% } %>
+            <a href="/">
+                <button class="button" type="button">Back</button>
+            </a>
+        </div>
     </main>
 
     <div class="decoratives-cloud decoratives">
@@ -26,6 +28,8 @@
     <%- include("../partials/footer"); -%>
 
     <%- include("../partials/scripts"); -%>
+
+    <script src="/javascript/generate-fire.js"></script>
 </body>
 
 </html>

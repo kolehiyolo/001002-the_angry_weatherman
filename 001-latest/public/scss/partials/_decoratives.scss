@@ -2,7 +2,7 @@
 
     &,
     * {
-        // border: dashed 1px red;
+        border: dashed 1px red;
     }
 
     // * All Sizes
@@ -25,7 +25,13 @@
 
         &-hot {
             .fire {
+                position: absolute;
                 
+                .burst {
+                    position: absolute;
+                    background: linear-gradient(#FFFFFF 4.91%, rgba(255, 255, 255, 0) 92.14%);
+                    border-radius: 50%;
+                }
             }
         }
     }
